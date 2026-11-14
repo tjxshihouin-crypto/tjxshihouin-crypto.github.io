@@ -17,6 +17,24 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
+## Deploy (GitHub Pages)
+
+Live at **https://tjxshihouin-crypto.github.io/** — enable it once:
+
+**Repo → Settings → Pages → Source: `Deploy from a branch` → `main` / `(root)` → Save.**
+
+After that, ship updates with one command:
+
+```bash
+./deploy.sh "what changed"
+```
+
+or manually:
+
+```bash
+git add . && git commit -m "what changed" && git push
+```
+
 ## What's inside
 
 - **Hero (100vh):** the ASCII reel — your videos play in full, in random order,
